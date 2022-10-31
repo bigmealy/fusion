@@ -12,14 +12,14 @@ on:
 
 jobs:
   build:
-
+    name: Build
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+    
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -41,12 +41,9 @@ jobs:
           dist/fusion
   
   deploy:
-  
+    name: Deploy
     needs: build
-    
     runs-on: ubuntu-latest
-    
-    name: Build and Deploy Job
     
     steps:
       - uses: actions/download-artifact@v3
@@ -58,7 +55,7 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_FUSION_WEB_APP }}
-          # repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/"
