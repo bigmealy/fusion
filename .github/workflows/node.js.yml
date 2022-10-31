@@ -31,7 +31,6 @@ jobs:
       name: Restore npm dependencies
     - run: npm run build --if-present
       name: Build
-    - run: npm test -- --watch=false --browsers=ChromeHeadless
     - uses: actions/upload-artifact@v3
       name: Upload artifact
       with:
@@ -50,4 +49,5 @@ jobs:
       name: Download artifact
       with:
         name: dist
+    - run: npm test -- --watch=false --browsers=ChromeHeadless
     
