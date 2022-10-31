@@ -31,6 +31,7 @@ jobs:
       name: Restore npm dependencies
     - run: npm run build --if-present
       name: Build
+    - run: npm test
     - uses: actions/upload-artifact@v3
       name: Upload artifact
       with:
@@ -49,3 +50,4 @@ jobs:
       name: Download artifact
       with:
         name: dist
+    
