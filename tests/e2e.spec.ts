@@ -32,3 +32,9 @@ test('homepage has contact details', async({page}) => {
   await expect(page.locator('.email')).toHaveText(bandEmail);
   await expect(page.locator('.phone')).toHaveText(barryMobile);
 })
+
+test('homepage has logo', async({page}) => {
+  await page.goto('/');
+
+  await expect(page.locator('.logo')).toHaveCount(1);
+})
