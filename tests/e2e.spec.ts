@@ -20,3 +20,15 @@ test('homepage has Fusion Wedding Band as title', async ({
   // // Expects the URL to contain intro.
   // await expect(page).toHaveURL(/.*intro/);
 });
+
+
+test('homepage has contact details', async({page}) => {
+
+  const bandEmail = 'info@fusionband.co.uk';
+  const barryMobile = '07454 740775';
+
+  await page.goto('/');
+  
+  await expect(page.locator('.email')).toHaveText(bandEmail);
+  await expect(page.locator('.phone')).toHaveText(barryMobile);
+})
