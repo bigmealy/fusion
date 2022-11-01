@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Fusion';
-  email = 'info@fusionband.co.uk';
-  phone = '07454 740775';
 }
