@@ -1,12 +1,12 @@
 import { test, expect } from '@playwright/test';
 
-test('homepage has Fusion as title', async ({
+test('homepage has Fusion Wedding Band as title', async ({
   page,
 }) => {
   await page.goto('/');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle('Fusion');
+  await expect(page).toHaveTitle('Fusion Wedding Band');
 
   // // create a locator
   // const getStarted = page.getByText('Get Started');
