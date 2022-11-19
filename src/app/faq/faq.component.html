@@ -1,1 +1,8 @@
 <p>faq works!</p>
+<p class="test-class">{{ test }}</p>
+<div *ngIf="faq$ | async as faq">
+    <div class="qanda-container" *ngFor="let q of faq">
+        <div class="question">{{ q.question }}</div>
+        <div class="answer">{{ q.answer }}</div>
+    </div>
+</div>

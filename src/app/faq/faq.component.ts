@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { FaqService } from './faq.service';
 
 @Component({
   selector: 'app-faq',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaqComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title, private faqService: FaqService) {
+    this.titleService.setTitle('Fusion - FAQ');
+  }
 
   ngOnInit(): void {
   }
+
+  faq$ = this.faqService.faq$;
+
+  test = this.faqService.test;
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,9 @@ export class HomeComponent implements OnInit {
   email = 'info@fusionband.co.uk';
   phone = '07454 740775';
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Fusion');
+  }
 
   ngOnInit(): void {
   }
