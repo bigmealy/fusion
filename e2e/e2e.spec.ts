@@ -56,7 +56,9 @@ test('homepage has link to setlist', async ({ page }) => {
   await expect(page.getByText('setlist works!')).toBeVisible();
 });
 
-test('going directly to setlist page works', async ({ page }) => {
-  await page.goto('/setlist');
-  await expect(page.getByText('setlist works!')).toBeVisible();
+['/', '/faq', '/setlist'].forEach((testPage) => {
+  test(`going directly to ${testPage} page works`, async ({ page }) => {
+    await page.goto(testPage);
+    await expect(page).toHaveTitle(/Fusion.*/);
+  });
 });
