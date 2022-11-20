@@ -55,3 +55,8 @@ test('homepage has link to setlist', async ({ page }) => {
   await page.getByText('Setlist').click();
   await expect(page.getByText('setlist works!')).toBeVisible();
 });
+
+test('going directly to setlist page works', async ({ page }) => {
+  await page.goto('/setlist');
+  await expect(page.getByText('setlist works!')).toBeVisible();
+});
