@@ -44,8 +44,14 @@ test('homepage has link to faq', async ({ page }) => {
   await expect(page.getByText('faq works!')).toBeVisible();
 });
 
-test('faq link works', async ({ page}) => {
+test('faq link works', async ({ page }) => {
   await page.goto('/');
   await page.locator('text=FAQ').click();
-  await expect(page).toHaveTitle('Fusion - FAQ')
+  await expect(page).toHaveTitle('Fusion - FAQ');
+});
+
+test('homepage has link to setlist', async ({ page }) => {
+  await page.goto('/');
+  await page.getByText('Setlist').click();
+  await expect(page.getByText('setlist works!')).toBeVisible();
 });
