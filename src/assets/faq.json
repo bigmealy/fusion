@@ -6,5 +6,81 @@
   {
     "question": "What time do you start, and how long do you perform for?",
     "answer": "For a standard wedding/function booking we will play up to 4 hours (which includes a half hour break), and the start time is typically 8pm or 8:30pm. However, no two bookings are exactly the same so we’ll be sure to discuss schedule with you."
+  },
+  {
+    "question": "Do you take all your own equipment?",
+    "answer": "Yes, all we need is easy venue access,  a clear area in which to set up, and electricity on tap! In addition to our own instruments and amplifiers, we have a professional Mackie PA system."
+  },
+  {
+    "question": "Will you be able to play my first dance?",
+    "answer": "Given enough notice (at least a month), and if it's not too hard to play, then yes. Otherwise, we can either play it via CD/MP3/iPod or discuss learning something else."
+  },
+  {
+    "question": "Can you play other special requests?",
+    "answer": "If we know it already, then yes! If we don't know it then we will consider learning it if we think it can be used regularly. As tempting as it is to want some control over our setlist, we have a system which involves gauging audience reactions and modifying our set on the fly to suit what people are enjoying on the night."
+  },
+  {
+    "question": "Can you play some background music during setup, break and packing up?",
+    "answer": "Yes. We will get some music on as soon as the PA is up, during our break, and for the start of pack-up (till we need to start stripping down the PA)"
+  },
+  {
+    "question": "Can we see you live before we book you?",
+    "answer": "We prefer that you have seen us live before confirming your booking. If you have not heard/seen us before, we will let you know of upcoming dates that are suitable for coming along to hear/see us."
+  },
+  {
+    "question": "What type of music do you play?",
+    "answer": "A good mix of well known music from 1950s right up to date as well as some great Ceilidh set dances (if requested). Check out the Setlist page on our website."
+  },
+  {
+    "question": "How much do you charge?",
+    "answer": "No two bookings are the same, and price is dependent on things like date, location, schedule, access to and size of venue. Contact us to get a tailor made quote. We are cheaper than hiring 5 plumbers on a Saturday night for 4 hours 😉"
+  },
+  {
+    "question": "Do you require a deposit?",
+    "answer": "We will hold any date you enquire about until you confirm with us. If someone else enquires about the same date, we will always give you first refusal. Once confirmation is received we require a £200 deposit to secure your booking."
+  },
+  {
+    "question": "Do you play ceilidh music?",
+    "answer": "We usually intersperse a few ceilidh dances into the evening (e.g. Gay Gordons, Dashing White Sergeant, Strip the Willow). We can also include a Grand March if you require. We will discuss ceilidh requirements with you at time of booking."
+  },
+  {
+    "question": "How loud will you be?",
+    "answer": "Volume is at you and your chosen venue’s discretion. Bear in mind that to get a good atmosphere, a reasonable level of volume is required but we don't like too loud any more than you."
+  },
+  {
+    "question": "What do you wear?",
+    "answer": "Please bear in mind that our attire has to be rugged enough to withstand a lot of heavy gear lifting and setting up, and must be comfortable enough to stand and entertain in for several hours. For weddings we always try to look our best, but please discuss at time of booking if you have any special \"band wardrobe\" requirements."
+  },
+  {
+    "question": "How do we pay you?",
+    "answer": "Please note that we are all independent freelance musicians and require separate payment (i.e. we won't accept a cheque for \"Fusion\"). We'll provide you with bank details for organising payment via bank transfer."
+  },
+  {
+    "question": "Are you insured?",
+    "answer": "We are individually insured. All of our equipment is regularly PAT tested as well."
+  },
+  {
+    "question": "Can my cousin Dave join you for a song?",
+    "answer": "We will do our best to accommodate things like this provided they are discussed and agreed before the event. We can't however have people using instruments or being on stage under the influence for insurance reasons. For that reason, it may be preferable to do any guest appearances near the start of the event."
+  },
+  {
+    "question": "What happens if one of the band can't manage on the day of my event (e.g. becomes ill)?",
+    "answer": "We have a network of fellow musicians that we can call on to stand in on the rare occasion one of the band can't manage. We've never let anyone down!"
+  },
+  {
+    "question": "How far will you travel?",
+    "answer": "We regularly travel within a 60 mile radius of Oldmeldrum. Further afield than this will incur additional cost which will be discussed as required."
+  },
+  {
+    "question": "Will we need to feed you?",
+    "answer": "As a wedding band, we have become connoisseurs of sandwiches, stovies, vol-au-vents, sausage rolls and wedding cake. We won't be shoving your guests out of the way to be first in the buffet queue, but unless you object, we are rather good at \"blending in\" at the back."
+  },
+  {
+    "question": "What if we need to cancel our Fusion booking?",
+    "answer": "We appreciate that people sometimes have to cancel. We just ask that you give us as much notice as possible of any changes or cancellations."
+  },
+  {
+    "question": "Where are you from?",
+    "answer": "We are mostly centered around the Oldmeldrum area."
   }
 ]
