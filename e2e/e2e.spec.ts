@@ -2,21 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('homepage has Fusion as title', async ({ page }) => {
   await page.goto('/');
-
-  // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle('Fusion');
-
-  // // create a locator
-  // const getStarted = page.getByText('Get Started');
-
-  // // Expect an attribute "to be strictly equal" to the value.
-  // await expect(getStarted).toHaveAttribute('href', '/docs/intro');
-
-  // // Click the get started link.
-  // await getStarted.click();
-
-  // // Expects the URL to contain intro.
-  // await expect(page).toHaveURL(/.*intro/);
 });
 
 test('homepage has contact details', async ({ page }) => {
@@ -48,6 +34,12 @@ test('faq link works', async ({ page }) => {
   await page.goto('/');
   await page.locator('text=FAQ').click();
   await expect(page).toHaveTitle('Fusion - FAQ');
+});
+
+test('faq page contains faq data', async ({ page }) => {
+  await page.goto('/faq');
+  await expect(page.getByText('How long do you take to set up?')).toBeVisible(); // Question
+  await expect(page.getByText('We need an hour to set up')).toBeVisible(); // Answer
 });
 
 test('homepage has link to setlist', async ({ page }) => {
