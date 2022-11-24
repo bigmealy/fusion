@@ -1,2 +1,6 @@
 <p>setlist works!</p>
-<div *ngFor="let track of setlist$ | async" class="track-name">{{track.name}}</div>
+
+<div *ngFor="let track of setlist$ | async">
+    <div class="track-name" style="font-weight: bold">{{track.name}}</div>
+    <div class="track-artist">{{track.artist}}</div>
+</div>

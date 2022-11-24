@@ -1,4 +1,4 @@
 export interface Track {
   name: string,
-  originalArtist: string
+  artist: string
 }
