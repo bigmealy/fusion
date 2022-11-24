@@ -54,3 +54,8 @@ test('homepage has link to setlist', async ({ page }) => {
     await expect(page).toHaveTitle(/Fusion.*/);
   });
 });
+
+test('setlist page contains set data', async ({page}) => {
+  await page.goto('/setlist');
+  await expect(page.getByText('Sweet Home Alabama')).toBeVisible();
+});

@@ -12,7 +12,7 @@ describe('FaqComponent', () => {
     'fake FAQ service',
     [],
     {
-      test: 'Fake MBT!',
+      test: 'Fake FAQ!',
       faq$: of([
         { question: 'Q1', answer: 'A1' },
         { question: 'Q2', answer: 'A2' },
@@ -36,8 +36,8 @@ describe('FaqComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should get fake test text from jasmine spy', () => {
-    expect(component.test).toEqual('Fake MBT!');
+  it('should get test text from service', () => {
+    expect(component.test).toEqual('Fake FAQ!');
   });
 
   it('should show questions', () => {

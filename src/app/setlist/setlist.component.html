@@ -1,1 +1,2 @@
 <p>setlist works!</p>
+<div *ngFor="let track of setlist$ | async" class="track-name">{{track.name}}</div>

@@ -13,5 +13,5 @@ export class FaqService {
 
   faq$ = this.http.get<Faq[]>(this.faqUrl).pipe(shareReplay(1));
 
-  test = 'Real MBT!';
+  test = 'Real FAQ!';
 }
