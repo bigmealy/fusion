@@ -5,17 +5,13 @@ test('homepage has Fusion as title', async ({ page }) => {
   await expect(page).toHaveTitle('Fusion');
 });
 
-test('homepage has contact details', async ({ page }) => {
-  const bandEmail = 'info@fusionband.co.uk';
-  const barryMobile = '07454 740775';
-
+test('homepage has link to elite promotions', async ({ page }) => {
+  const eliteUrl = 'https://elite.scot/fusion-wedding-band/'
+  
   await page.goto('/');
+  await page.click('text=Elite Promotions');
+  expect(page.url()).toBe(eliteUrl);
 
-  await expect(page.getByText(bandEmail)).toBeVisible();
-  await expect(page.getByText(barryMobile)).toBeVisible();
-
-  await expect(page.locator('.email')).toHaveText(bandEmail);
-  await expect(page.locator('.phone')).toHaveText(barryMobile);
 });
 
 test('homepage has logo', async ({ page }) => {
@@ -32,7 +28,7 @@ test('homepage has link to faq', async ({ page }) => {
 
 test('faq link works', async ({ page }) => {
   await page.goto('/');
-  await page.locator('text=FAQ').click();
+  await page.click('text=FAQ');
   await expect(page).toHaveTitle('Fusion - FAQ');
 });
 
@@ -55,7 +51,7 @@ test('homepage has link to setlist', async ({ page }) => {
   });
 });
 
-test('setlist page contains set data', async ({page}) => {
+test('setlist page contains set data', async ({ page }) => {
   await page.goto('/setlist');
   await expect(page.getByText('Sweet Home Alabama')).toBeVisible();
 });

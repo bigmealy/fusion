@@ -7,8 +7,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  email = 'info@fusionband.co.uk';
-  phone = '07454 740775';
+  eliteUrl = 'https://elite.scot/fusion-wedding-band/';
 
   constructor(private titleService: Title) {
     this.titleService.setTitle('Fusion');
