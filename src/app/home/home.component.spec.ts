@@ -21,8 +21,4 @@ describe('HomeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render title', () => {
-    expect(fixture.nativeElement.querySelector('.content')?.textContent).toContain('welcome');
-  });
-
 });
