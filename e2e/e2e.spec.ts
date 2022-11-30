@@ -5,13 +5,16 @@ test('homepage has Fusion as title', async ({ page }) => {
   await expect(page).toHaveTitle('Fusion');
 });
 
-test('homepage has link to elite promotions', async ({ page }) => {
+test('homepage has link to elite promotions which opens in a new browser page', async ({ context, page }) => {
   const eliteUrl = 'https://elite.scot/fusion-wedding-band/'
   
   await page.goto('/');
-  await page.click('text=Elite Promotions');
-  expect(page.url()).toBe(eliteUrl);
-
+  const [newPage] = await Promise.all([
+    context.waitForEvent('page'),
+    page.click('text=Elite Promotions')
+  ]);
+  await newPage.waitForLoadState();
+  expect(newPage.url()).toBe(eliteUrl);
 });
 
 test('homepage has logo', async ({ page }) => {
