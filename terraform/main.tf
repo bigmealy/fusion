@@ -21,6 +21,10 @@ provider "azurerm" {
 resource "azurerm_resource_group" "fusion" {
   name     = "fusion"
   location = "uksouth"
+  tags = {
+    "First Tag"  = "First Value"
+    "Second Tag" = "Second Value"
+  }
 }
 
 # Chicken/egg scenario here:
