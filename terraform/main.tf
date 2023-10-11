@@ -24,6 +24,7 @@ resource "azurerm_resource_group" "fusion" {
   tags = {
     "First Tag"  = "First Value"
     "Second Tag" = "Second Value"
+    "Third Tag" = "Third Value"
   }
 }
 
