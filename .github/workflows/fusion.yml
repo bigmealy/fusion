@@ -33,7 +33,7 @@ jobs:
       name: Build
     - run: npm test -- --watch=false --browsers=ChromeHeadless
       name: Karma Tests
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       name: Upload artifact
       with:
         name: dist
@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         name: Download artifact
         with:
           name: dist
