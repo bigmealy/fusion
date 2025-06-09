@@ -1,10 +1,7 @@
 [
   { "name": "Loch Lomond", "artist": "Runrig" },
-  { "name": "Say You Won't Let Go", "artist": "James Arthur" },
-  { "name": "Good Times", "artist": "Chic" },
-  { "name": "Shut Up and Dance", "artist": "Walk the Moon" },
+  { "name": "Seventeen Going Under", "artist": "Sam Fender"},
   { "name": "Sweet Home Alabama", "artist": "Lynyrd Skynyrd" },
-  { "name": "Teenage Kicks", "artist": "Undertones" },
   { "name": "Stuck In The Middle", "artist": "Jeff Healey" },
   { "name": "Last Night", "artist": "The Strokes" },
   { "name": "A Little Respect", "artist": "Wheatus" },
@@ -52,5 +49,9 @@
   { "name": "Thinking Out Loud", "artist": "Ed Sheeran" },
   { "name": "Li'l Devil", "artist": "The Cult" },
   { "name": "Can't Get Enough", "artist": "Bad Company" },
-  { "name": "Wishing Well", "artist": "Free" }
+  { "name": "Wishing Well", "artist": "Free" },
+  { "name": "Good Times", "artist": "Chic" },
+  { "name": "Teenage Kicks", "artist": "Undertones" },
+  { "name": "Shut Up and Dance", "artist": "Walk the Moon" },
+  { "name": "Say You Won't Let Go", "artist": "James Arthur" }
 ]
